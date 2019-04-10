@@ -42,4 +42,4 @@ _allowed_symbols = [
 ]
 ```
 
-That's it!
+That's it! Check examples for details on how to use IpoptOptimizerInterface.
