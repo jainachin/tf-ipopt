@@ -38,7 +38,6 @@ optimizer = tf.contrib.opt.IpoptOptimizerInterface(loss=f,
 												 	# "max_iter": 300,
 												 	"linear_solver": "mumps",
 												 	"log_level": 0,
-												 	# "hessian": "exact"
 												 	"hessian_approximation": "limited-memory"
 												 	}
 												 	)

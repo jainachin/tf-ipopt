@@ -66,11 +66,10 @@ class IpoptOptimizerInterface(ExternalOptimizerInterface):
                           equalities=[h],
                           var_to_bounds={x:(1, 5)},
                             options={
-                            "print_level": 0, 
+                          "print_level": 0, 
                           "max_iter": 100,
                           "linear_solver": "mumps",
-                          "log_level": 0
-                          }
+                          "log_level": 0}
                           )
 
   # initialize
@@ -203,6 +202,4 @@ class IpoptOptimizerInterface(ExternalOptimizerInterface):
     message_args = [status, result_f]
     logging.info('\n'.join(message_lines), *message_args)
     print("Optimization terminated with message: {}".format(status))
-    return result_x
-
-    
+    return result_x    
