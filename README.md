@@ -1,5 +1,5 @@
 ## Use Interior Point OPTimizer (IPOPT) with TensorFlow
-
+tf-ipopt does constrained optimization in TensorFlow using IPOPT. Models are defined using TensorFlow variables and operations. Gradients for optimization are computed by TensorFlow and passed on to the IPOPT solver. This allows us to exploit the power of GPUs to speed up numerical optimization. See examples for details on how to model and solve constrained optimization.
 
 Follow the steps to install. It is assumed that
 * tensorflow
